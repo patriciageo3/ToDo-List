@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> ToDo List </title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kavivanar">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One">
+    <!-- my styles -->
+    <link href="assets/css.css" rel="stylesheet">
+    <!-- FONT AWESOME -->
+   <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
+   <!-- icon -->
+   <link rel="icon" href="./assets/pics/favicon.ico">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1> Things I've Gotta Get Done </h1>
+            <hr id="outline">
+            
+            <div id="menu"> 
+                <i class="fa fa-chevron-circle-up" title="Select an item to move it up!"></i>
+                <i class="fa fa-chevron-circle-down" title="Select an item to move it down!"></i>
+                <img src="./assets/pics/undo.png" alt="Undo delete" title="Undo delete">
+            </div>
+            
+            <ul id="list-items">
+            
+            </ul>
+           
+            <form class="add-items"> 
+            <input type="text" class="form-control" id="todo-list-item" placeholder="What do you need to do today?">
+            <button type="submit" class="btn btn-default add">
+                Add to List
+            </button>
+            </form>
+        </div>
+          
+        <!-- EDIT form modal -->
+        <div class="cover"> </div>
+        <div id="modal">
+            <span class="close-modal"> <i class='fa fa-window-close' aria-hidden='true'></i></span>
+            <i class="fa fa-edit"></i><h1>Edit item... </h1>
+            <textarea type="text" id="edit-list-item"> </textarea>
+            <button class="edit-me-submit">
+                Add item
+            </button>
+        </div>
+        
+        <!-- Customised Alert-box -->
+        <div class="cover"> </div>
+        <div id="customisedAlert">
+            <span class="close-alert"> <i class='fa fa-window-close' aria-hidden='true'></i></span>
+            <i class="fa fa-exclamation-circle"></i>
+            <h1>Alert: Oooops, something went wrong! </h1>
+            <hr>
+            <p> </p>
+            <button id="ok"> OK...</button>
+        </div>  
+
+    <script src="./assets/jQuery/jquery-3.3.1.min.js"> </script>
+    <script src="./assets/jQuery/jquery-ui-1.12.1.min.js"> </script>
+    <script src="./assets/additionalStyles.js"> </script>
+    <script src="./assets/main.js"> </script>
+    </body>
+</html>
