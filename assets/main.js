@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $list = $("#list-items");
+    let $list = $("#list-items");
     $list.html(localStorage.getItem("listItems"));
     
     let $editWindow = $("#modal");
@@ -130,6 +130,14 @@ $(document).ready(function() {
         sound.play();
         return;
     }
+	
+	function changeBg() {
+		let imgs = ["01", "02", "03"];
+		let index = Math.floor(Math.random() * imgs.length);
+		$("body, html").css("background-image", `url('./assets/pics/${imgs[index]}.jpg')`);
+	}
+	
+	setInterval(changeBg, 15000);
     
     $('.add-items').submit( function(event) {
         event.preventDefault();
@@ -346,6 +354,6 @@ $(document).ready(function() {
         }
         timer = deactivateUpDownArrows(); 
     });
-    
+
     
 });

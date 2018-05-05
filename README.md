@@ -28,3 +28,9 @@ You may add new tasks, but also:
 
 Patricia Georgescu
 
+## License & Copyrights
+Images from Pixabay.
+
+## Preview
+
+![Alt text](assets/pics/preview.JPG "Preview")
