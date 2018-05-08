@@ -13,6 +13,8 @@ This ToDo List was created using:
 * jQuery UI
 * Additional tools like: Font Awesome, Google Fonts, etc.
 
+Live Demo [here](https://patriciageo3.github.io/ToDo-List/)
+ 
 ## Functionality
 
 You may add new tasks, but also:
